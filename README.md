@@ -53,8 +53,8 @@ After training for one million and then ten million games it can be found that t
 
 Note: The environment does not allow insurance, splitting or doubling down on a hand.
 
-![alt text](Results-Linear_1000000.png "Graph of the agent's performance while training - 1,000,000 samples")
-![alt text](Results-Linear_10000000.png "Graph of the agent's performance while training - 10,000,000 samples")
+![alt text](Results-Linear-1000000.png "Graph of the agent's performance while training - 1,000,000 samples")
+![alt text](Results-Linear-10000000.png "Graph of the agent's performance while training - 10,000,000 samples")
 
 The deep Q-learning network achieved an expected return of around -0.1 which was actually better than the Q-table performance. Later I found that this was because the Q-table had not explored all of the states of the game.
 
@@ -76,13 +76,13 @@ With the Q-table learning I noticed that the agent very quickly learns to play w
 
 After only ten thousand games, the agent approaches a value reasonably close to the true expected return (expected return from playing the optimal policy).
 
-![alt text](Results-Linear_10000.png "Graph of the agent's performance while training - 10,000 samples")
+![alt text](Results-Linear-10000.png "Graph of the agent's performance while training - 10,000 samples")
 
 Looking at the logarithmic plots shows that the agent converges to within 33.33% of the true value within 10<sup>4</sup> games, and within 5% after 10<sup>5</sup> games. 
 
-![alt text](Results-Logarithmic_10000.png "Graph of the agent's performance while training - 10,000 samples")
-![alt text](Results-Logarithmic_1000000.png "Graph of the agent's performance while training - 1,000,000 samples")
-![alt text](Results-Logarithmic_10000000.png "Graph of the agent's performance while training - 10,000,000 samples")
+![alt text](Results-Logarithmic-10000.png "Graph of the agent's performance while training - 10,000 samples")
+![alt text](Results-Logarithmic-1000000.png "Graph of the agent's performance while training - 1,000,000 samples")
+![alt text](Results-Logarithmic-10000000.png "Graph of the agent's performance while training - 10,000,000 samples")
 
 As expected, the deep Q-learning agent took much longer to converge - at least a million games are required for noticeable improvement.
 
